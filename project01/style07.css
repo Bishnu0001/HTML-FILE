@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Poppins'; 
+    box-sizing: border-box;
+} 
+body{
+    height: 100vh;
+    width: 100vw;
+    /* background-color:rgb(246, 251, 251); */
+    /* background-image: url(https://images.pexels.com/photos/10634924/pexels-photo-10634924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover; */
+   animation: change 10s linear infinite ;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+} 
+@keyframes change { 
+    0%{
+        background-color: whitesmoke;
+
+    } 
+    25%{
+        background-color: gold;
+    } 
+    50%{
+        background-color: greenyellow;
+    } 
+    75%{
+        border-right-color: blueviolet;
+    } 
+    100%{
+        background-color: yellow;
+    }
+    
+}
+li{ list-style: none;
+    cursor: pointer;
+} 
+a{
+    text-decoration: none;
+} 
+button{
+    background-color:rgb(18, 155, 155);
+    padding: 4px 10px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight:700;
+    width: fit-content; 
+} 
+button:hover{
+    background-color: #fff;
+    color:rgb(18,155,155);
+    border: 1px solid black;
+}  
+header{
+    padding:15px 0;
+}
+nav{
+    display:flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    } 
+  nav .logo{
+    font-weight: 700;
+    font-size: 35px;
+   text-decoration:2px underline white;  
+
+  }   
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+    font-weight: 500;
+  } 
+  nav ul li:hover{
+    text-decoration: underline;
+    font-weight: 900; 
+  }
+.search-field{
+    display: flex; 
+    gap: 5px;
+} 
+input{
+    padding: 4px 10px;
+} 
+.hero-section{ 
+    display: flex;
+    align-items:center ;
+    justify-content: space-around;
+} 
+/* .hero-section-left{
+    justify-content: space-evenly;
+    gap: 10px;
+}  */
+
+.hero-section-left h1 {
+    font-size: 40px; 
+    margin-bottom: 20px; 
+    font-weight: 700;
+} 
+
+.hero-section-left h1 span {
+    color:rgb(18, 155, 155) ; 
+    font-weight: 900; 
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+} 
+.hero-section-left p{
+    font-weight: 500; 
+    font-size: 30px;
+} 
+.hero-section-left p span{
+    font-weight: 700;
+    font-size: 25px;
+    color:rgb(15, 155,155)
+
+} 
+.hero-section-right{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+     gap:30px;
+} 
+.hero-section-right-btn{
+    display: flex;
+    align-items: center;
+    gap:30px;
+} 
+.hero-section-right img{
+    height: 400px;
+    width: 400px;
+    border-radius: 40%;
+} 
+footer {
+    font-weight: 600;
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-around;
+  }
+  
+  footer ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+

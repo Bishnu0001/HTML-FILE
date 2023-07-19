@@ -1,0 +1,43 @@
+body{
+    background-color:red;
+} 
+div{
+    font-size: x-large;
+    text-align: center;
+}
+div::after{
+    content: 'welcome to bishnu kumar wolrld'
+} 
+@media(max-width:450px){
+    body{
+        background-color: #fff;
+    } 
+    div::after{'very small'}
+} 
+/* @media(min-width:400px) and (max-width:800px){ */
+    /*                  OR                       */
+    @media(400px<=width<=800px){
+    body{
+        background-color:green;
+    }
+    div::after{
+        content: 'hey boy'
+    }
+}
+@media(min-width:500px) {
+    body{
+     background-color: blue;
+    } 
+    div::after{
+        content: 'hello guys wellcome back to my channel '
+    }
+}
+
+@media(min-width:900px) { 
+    /* if viewport is atleast 900px then this style will apply*/ 
+    body{
+        background-color: aquamarine;
+    } 
+    div::after{content: 'woah it working'}
+    
+}   
